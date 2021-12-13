@@ -90,7 +90,7 @@ ClientAliveCountMax {{ sshd_client_alive_countMax }}
 
 ### SFTP CONFIGURATION ###
 
-Subsystem sftp /usr/lib/openssh/sftp-server
+Subsystem sftp {{ sshd_sftp_subsystem }}
 
 {% if sshd_accept_env -%}
 # Allow client to pass environment variables

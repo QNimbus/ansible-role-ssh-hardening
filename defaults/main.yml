@@ -74,7 +74,7 @@ sshd_banner: "/etc/issue.net"
 # Use pam authentification
 sshd_pam: "yes"
 
-# Use  privilege separation
+# Use privilege separation
 sshd_privilege_separation_59: "sandbox"
 sshd_privilege_separation_53: "yes"
 
@@ -88,6 +88,9 @@ sshd_max_startups: "10:30:100"
 # Indicate if AcceptEnv should be set
 sshd_accept_env: false
 sshd_accept_env_string: "LANG LC_* XMODIFIERS LANG"
+
+# sftp subsystem to use (e.g. internal-sftp or /usr/lib/openssh/sftp-server)
+sshd_sftp_subsystem: internal-sftp
 
 ### OPENSSH-CLIENT ###
 
